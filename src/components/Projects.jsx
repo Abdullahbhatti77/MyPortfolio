@@ -81,7 +81,7 @@ export default function Projects() {
         <>
             <div className='bg-[#EEEEEE] lg:px-20 py-5'>
                 <h2 className='flex justify-center text-4xl font-light' id="projects">Projects</h2>
-                <div className='grid justify-center grid-cols-1 gap-7 md:mt-0 mt-8 md:grid-cols-2 lg:grid-cols-3 md:p-10'>
+                <div className='grid justify-center grid-cols-1 gap-7 md:mt-0 mt-8 md:grid-cols-2 lg:grid-cols-3 md:p-10 px-5'>
 
                     <div className='flex justify-center hover:scale-105 hover:shadow-xl transition duration-400 ease-in-out'>
                         <div className="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg">
@@ -107,7 +107,7 @@ export default function Projects() {
                         <div className="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg">
                             <img className="w-full cursor-pointer h-48" src={techoverflow2} alt="Project2" onClick={handleTechoverflowImage} />
                             <div className="px-6 py-4">
-                                <div className="mb-2 text-lg font-semibold">Techoverflow Demo Website</div>
+                                <div className="mb-2 text-lg font-semibold">Techoverflow Website</div>
                                 <p className="text-md font-normal text-[#8A8886]">
                                     Full responsive website built using React JS and Bootstrap. I developed this website during internsip.
                                 </p>
@@ -164,12 +164,12 @@ export default function Projects() {
                     </div>
 
                     <div className='flex justify-center hover:scale-105 hover:shadow-xl transition duration-400 ease-in-out'>
-                        <div className="max-w-sm overflow-hidden bg-white rounded-lg shadow-lg">
+                        <div className="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg">
                             <img className="w-full cursor-pointer h-48" src={portfolio3} alt="Project5" onClick={handlePortfolio2Image} />
                             <div className="px-6 py-4">
                                 <div className="mb-2 text-lg font-semibold">Portfolio Website</div>
                                 <p className="text-md font-normal text-[#8A8886]">
-                                    Full responsive website built using React JS and Tailwind CSS. Its a portfolio website. Its currently running website you are seeing.
+                                    Full responsive website built using React JS and Tailwind CSS. Its a portfolio website. Its the website you are seeing now.
                                 </p>
                             </div>
                             <div className="px-6 pb-4">
@@ -181,7 +181,7 @@ export default function Projects() {
                     </div>
 
                     <div className='flex justify-center hover:scale-105 hover:shadow-xl transition duration-400 ease-in-out'>
-                        <div className="max-w-sm overflow-hidden bg-white rounded-lg shadow-lg">
+                        <div className="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg">
                             <img className="w-full cursor-pointer h-48" src={portfolio4} alt="Project6" onClick={handlePortfolioImage} />
                             <div className="px-6 py-4">
                                 <div className="mb-2 text-lg font-semibold">Portfolio Website</div>

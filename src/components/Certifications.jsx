@@ -82,7 +82,7 @@ export default function Certifications() {
     <>
       <div className=' bg-[#EEEEEE] lg:px-20 py-5'>
         <h2 className='flex justify-center text-4xl font-light' id="certifications">Certifications</h2>
-        <div className='grid justify-center grid-cols-1 gap-7 md:mt-0 mt-8 md:grid-cols-3 lg:grid-cols-4 md:p-10'>
+        <div className='grid justify-center grid-cols-1 gap-7 md:mt-0 mt-8 md:grid-cols-3 lg:grid-cols-4 md:p-10 px-5'>
 
           <div className='flex justify-center hover:scale-105 hover:shadow-xl transition duration-400 ease-in-out'>
             <div className="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg">
@@ -126,7 +126,7 @@ export default function Certifications() {
           <div className='flex justify-center hover:scale-105 hover:shadow-xl transition duration-400 ease-in-out'>
             <div className="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg">
               <img className="w-full md:h-[76%] cursor-pointer" src={reactcert} alt="React Certificate" onClick={handleReactImage} />
-              <div className="px-6">
+              <div className="px-4 py-2">
                 <div className="text-md font-semibold">Getting Started with ReactJS Components</div>
 
               </div>
@@ -136,7 +136,7 @@ export default function Certifications() {
           <div className='flex justify-center hover:scale-105 hover:shadow-xl transition duration-400 ease-in-out'>
             <div className="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg">
               <img className="w-full md:h-[76%] cursor-pointer" src={community} alt="Community Certificate" onClick={handleCommunityImage} />
-              <div className="px-6">
+              <div className="px-4 py-2">
                 <div className="text-md font-semibold">Completed 80 hours of community work</div>
 
               </div>

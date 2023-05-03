@@ -50,12 +50,12 @@ export default function About() {
                                 working with others and collaborating on projects to create the best
                                 possible outcome. Created multiple projects during my graduation. While doing my graduation, I had the pleasure to work for two companies <span className='font-bold'>Techoverflow</span> and <span className='font-bold'>EDTest Testing Services</span>.
                             </p>
-                            <p className='font-normal text-[#888888] mt-2'>
+                            <p className='text-md font-normal text-[#808084] mt-2'>
                                 I am confident that my technical skills and drive to
                                 continuously improve will make me a valuable asset to any team.
                             </p>
-                            <a href='https://www.linkedin.com/in/muhammad-abdullah-08b0b81b0'><button className='transition duration-400 ease-in-out rounded-md w-full max-w-xs p-2 mt-5 font-light text-white bg-blue-600 hover:bg-blue-500 lg:w-48'>
-                                Connect on LinkedIn
+                            <a href='cv.pdf'><button className='transition duration-400 ease-in-out rounded-md w-full max-w-xs p-2 mt-5 text-md font-normal text-white bg-blue-600 hover:bg-gray-800 lg:w-40'>
+                                Download CV
                             </button></a>
                         </div>
                     </div>

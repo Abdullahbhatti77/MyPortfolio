@@ -7,7 +7,7 @@ export default function Experience() {
         <>
             <div className='lg:px-20 bg-[#EEEEEE] py-5'>
                 <h2 className='flex justify-center text-4xl font-light' id="experience">Experience</h2>
-                <div className='grid grid-cols-1 md:mt-0 mt-8 gap-7 lg:grid-cols-2 md:p-10 md:px-0 px-5'>
+                <div className='grid grid-cols-1 md:mt-0 mt-8 gap-7 lg:grid-cols-2 md:p-10 px-5'>
 
                     {/* <div className='p-5 bg-white rounded-md shadow-lg relative'>
                         <h3 className='text-2xl font-semibold'>TechOverflow</h3>

@@ -13,6 +13,7 @@ import seo from '../assets/seo.svg';
 import wordpress from '../assets/wordpress.svg';
 import mongodb from '../assets/mongodb.svg';
 import aws from '../assets/aws.svg';
+import nodejs from '../assets/nodejs.svg';
 
 export default function Skills() {
   return (
@@ -34,6 +35,10 @@ export default function Skills() {
           <div className='flex flex-col items-center'>
             <img src={redux} className='w-20 h-20' alt='redux Logo' />
             <p className='flex justify-center p-2'>Redux JS</p>
+          </div>
+          <div className='flex flex-col items-center'>
+            <img src={nodejs} className='w-20 h-20' alt='nodejs Logo' />
+            <p className='flex justify-center p-2'>Node JS</p>
           </div>
           <div className='flex flex-col items-center'>
             <img src={mongodb} className='w-20 h-20' alt='mongodb Logo' />

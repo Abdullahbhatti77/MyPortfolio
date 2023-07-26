@@ -149,7 +149,7 @@ export default function Projects() {
                             <div className="px-6 py-4">
                                 <div className="mb-2 text-lg font-semibold">Mini Netflix Clone</div>
                                 <p className="text-md font-normal text-[#8A8886]">
-                                    Responsive website built using React JS, Bootsrap. It shows the trending movies and tv shows.
+                                    Responsive website built using React JS, Bootsrap.
                                 </p>
                                 <p>Visit:  <span><a href='https://netflixur.netlify.app'>netflixur.netlify.app</a></span></p>
                             </div>
@@ -169,7 +169,7 @@ export default function Projects() {
                             <div className="px-6 py-4">
                                 <div className="mb-2 text-lg font-semibold">Portfolio Website</div>
                                 <p className="text-md font-normal text-[#8A8886]">
-                                    Full responsive website built using React JS and Tailwind CSS. Its a portfolio website. Its the website you are seeing now.
+                                    Full responsive portfolio website built using React JS and Tailwind CSS. Its the same website you are seeing now.
                                 </p>
                             </div>
                             <div className="px-6 pb-4">
@@ -184,13 +184,13 @@ export default function Projects() {
                         <div className="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg">
                             <img className="w-full cursor-pointer h-48" src={portfolio4} alt="Project6" onClick={handlePortfolioImage} />
                             <div className="px-6 py-4">
-                                <div className="mb-2 text-lg font-semibold">Portfolio Website</div>
+                                <div className="mb-2 text-lg font-semibold">CRUD App</div>
                                 <p className="text-md font-normal text-[#8A8886]">
-                                    It is also built using React JS and Bootstrap. Firebase was also used for receiving messages from users in contact section.
+                                    Responsive app built using Next JS, MongoDB, and Tailwind CSS to perform crud operations.
                                 </p>
                             </div>
                             <div className="px-6 pb-4">
-                                <a href='https://github.com/Abdullahbhatti77/portfolio.git'>
+                                <a href='https://github.com/Abdullahbhatti77/NextJS-Crud.git'>
                                     <button className="px-3 py-1 font-semibold text-white bg-blue-500 rounded-2xl hover:bg-slate-700">
                                         Check
                                     </button>

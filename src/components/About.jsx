@@ -46,7 +46,7 @@ export default function About() {
                         <div className='lg:col-span-1'>
                             <h2 className='font-bold'>Hello! I'm M. Abdullah</h2>
                             <p className='text-md font-normal text-[#808084] mt-2'>
-                                Computer Science student graduating from <span className='font-bold'>University of Management and Technology Lahore</span>, last semester. Quick learner and thrive in a fast-paced environment. Enjoy
+                                Computer Science student graduating from <span className='font-bold'>University of Management and Technology Lahore</span>, last semester completed. Quick learner and thrive in a fast-paced environment. Enjoy
                                 working with others and collaborating on projects to create the best
                                 possible outcome. Created multiple projects during my graduation. While doing my graduation, I had the pleasure to work for two companies <span className='font-bold'>Techoverflow</span> and <span className='font-bold'>EDTest Testing Services</span>.
                             </p>

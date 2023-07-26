@@ -1,6 +1,6 @@
 import React from 'react'
 import techoverflow from '../assets/techoverflow.jfif'
-import educist from '../assets/educist.jfif'
+import edtest from '../assets/edtest.jfif'
 
 export default function Experience() {
     return (
@@ -37,7 +37,7 @@ export default function Experience() {
                                 </div>
                             </div>
                             <div className='pl-5'>
-                                <h3 className='py-1 text-2xl font-bold'>Internee</h3>
+                                <h3 className='py-1 text-2xl font-bold'>Trainee</h3>
                                 <p className='text-sm'>Collaborated with a team of developers and designers to create responsive and user-friendly websites using React JS, Next JS, Tailwind CSS, Bootstrap. Expanded knowledge of front-end development technologies.</p>
                                 <h3 className='py-1 text-md font-bold'>Responsibilities:</h3>
                                 <ul className='list-disc pl-10 text-sm'>
@@ -55,14 +55,14 @@ export default function Experience() {
                         <div className='flex lg:flex-row flex-col'>
                             <div className='flex justify-center items-center flex-col'>
                                 <div className='w-32 flex items-center justify-center flex-col'>
-                                    <img src={educist} className='w-24 h-24 rounded-full'></img>
-                                    <h3 className='text-lg font-bold mt-2 text-slate-600'>EdTest</h3>
-                                    <p className='text-xs mt-1 text-[#8A8A8A]'>Sep 2022 - Sep 2023</p>
+                                    <img src={edtest} className='w-24 h-24 rounded-full'></img>
+                                    <h3 className='text-lg font-bold mt-2 text-slate-600 text-center'>EdTest Testing Services</h3>
+                                    <p className='text-xs mt-1 text-[#8A8A8A]'>Sep 2022 - July 2023</p>
                                 </div>
                             </div>
                             <div className='pl-5'>
-                                <h3 className='text-2xl font-bold py-2'>Final Year Project</h3>
-                                <p className='text-sm'>Worked on client based project. Gained exposure of working with different technologies which includes (MERN Stack, Next JS, Tailwind CSS, Git,Heroku, Vercel, Cloudinary etc.). Its an ongoing project.</p>
+                                <h3 className='text-2xl font-bold py-2'>Full Stack Developer</h3>
+                                <p className='text-sm'>It was my final year project. Gained exposure of working with different technologies which includes (React JS, MongoDB, Node JS, Next JS, Tailwind CSS, Git,Heroku, Vercel, Cloudinary etc.).</p>
                                 <h3 className='py-2 text-md font-bold'>Responsibilities:</h3>
                                 <ul className='list-disc pl-10 text-sm'>
                                     <li>Quality Assurance.</li>

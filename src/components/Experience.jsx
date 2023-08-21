@@ -6,28 +6,9 @@ export default function Experience() {
     return (
         <>
             <div className='lg:px-20 bg-[#EEEEEE] py-5'>
-                <h2 className='flex justify-center text-4xl font-light' id="experience">Experience</h2>
+                <h2 className='flex justify-center text-4xl font-light' id="experience" data-aos="slide-down" data-aos-duration="1000">Experience</h2>
                 <div className='grid grid-cols-1 md:mt-0 mt-8 gap-7 lg:grid-cols-2 md:p-10 px-5'>
-
-                    {/* <div className='p-5 bg-white rounded-md shadow-lg relative'>
-                        <h3 className='text-2xl font-semibold'>TechOverflow</h3>
-                        <p className='absolute mt-1 right-5 text-sm text-slate-600'>Mar/23-May/23</p>
-                        <p className='mt-1 text-sm text-slate-600'>Internship</p>
-                        <p className='mt-4 text-md text-[#8A8886]'>I did 3 months internship at Techoverflow. During my stay, I Collaborated with a team of developers and designers
-                            to create responsive and user-friendly websites using <span className='font-semibold'>React JS, Next JS, Tailwind CSS, Bootstrap.</span> Expanded knowledge of front-end development technologies and best practices through ongoing training.
-                            Contributed to team projects using version control tools such as Git and GitHub. I developed a demo website for my company as well.</p>
-                    </div>
-
-                    <div className='p-5 bg-white rounded-md shadow-lg relative'>
-                        <h3 className='text-2xl font-semibold'>Education Testing Service</h3>
-                        <p className='absolute mt-1 right-5 text-sm text-slate-600'>Sep/22-Sep/23</p>
-                        <p className='mt-1 text-sm text-slate-600'>Final Year Project</p>
-                        <p className='mt-4 text-md text-[#8A8886]'>It is a large scale project. We faced several challenges during the project and one of the challenge was to make it scalable
-                            so that it can be further expanded if needed in future. We gained a lot of exposure by working on various web development technologies like <span className='font-semibold'>React JS, Next JS, Redux Saga, Node JS, MongoDB, Heroku, Vercel, Git, Cloudinary
-                                SCSS, Tailwind CSS etc </span>. I acted as a frontend developer and QA during the project.</p>
-                    </div> */}
-
-                    <div className='rounded-xl shadow-xl p-5 bg-white' >
+                    <div className='rounded-xl shadow-xl p-5 bg-white' data-aos="zoom-in-right" data-aos-duration="1000">
                         <div className='flex lg:flex-row flex-col'>
                             <div className='flex justify-center items-center flex-col'>
                                 <div className='w-32 flex items-center justify-center flex-col'>
@@ -37,7 +18,7 @@ export default function Experience() {
                                 </div>
                             </div>
                             <div className='pl-5'>
-                                <h3 className='py-1 text-2xl font-bold'>Trainee</h3>
+                                <h3 className='py-1 text-2xl font-bold'>Frontend Trainee</h3>
                                 <p className='text-sm'>Collaborated with a team of developers and designers to create responsive and user-friendly websites using React JS, Next JS, Tailwind CSS, Bootstrap. Expanded knowledge of front-end development technologies.</p>
                                 <h3 className='py-1 text-md font-bold'>Responsibilities:</h3>
                                 <ul className='list-disc pl-10 text-sm'>
@@ -51,7 +32,7 @@ export default function Experience() {
                         </div>
                     </div>
 
-                    <div className='rounded-xl shadow-xl p-5 bg-white'>
+                    <div className='rounded-xl shadow-xl p-5 bg-white' data-aos="zoom-in-left" data-aos-duration="1000">
                         <div className='flex lg:flex-row flex-col'>
                             <div className='flex justify-center items-center flex-col'>
                                 <div className='w-32 flex items-center justify-center flex-col'>
@@ -65,10 +46,12 @@ export default function Experience() {
                                 <p className='text-sm'>It was my final year project. Gained exposure of working with different technologies which includes (React JS, MongoDB, Node JS, Next JS, Tailwind CSS, Git,Heroku, Vercel, Cloudinary etc.).</p>
                                 <h3 className='py-2 text-md font-bold'>Responsibilities:</h3>
                                 <ul className='list-disc pl-10 text-sm'>
+                                    
                                     <li>Quality Assurance.</li>
-                                    <li>Creating user design.</li>
+                                    <li>Creating user interface.</li>
                                     <li>Creating custom Api's.</li>
-                                    <li>Implementing search filters.</li>
+                                    <li>Deployment on cloud platforms.</li>
+                                    {/* <li>Implementing search filters.</li> */}
                                     <li>Implementing SignUp, Sign In, Forgot password functionalities.</li>
                                 </ul>
                             </div>

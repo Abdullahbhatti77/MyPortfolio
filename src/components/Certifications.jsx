@@ -81,7 +81,7 @@ export default function Certifications() {
   return (
     <>
       <div className=' bg-[#EEEEEE] lg:px-20 py-5'>
-        <h2 className='flex justify-center text-4xl font-light' id="certifications">Certifications</h2>
+        <h2 className='flex justify-center text-4xl font-light' id="certifications" data-aos="slide-down" data-aos-duration="1000">Certifications</h2>
         <div className='grid justify-center grid-cols-1 gap-7 md:mt-0 mt-8 md:grid-cols-3 lg:grid-cols-4 md:p-10 px-5'>
 
           <div className='flex justify-center hover:scale-105 hover:shadow-xl transition duration-400 ease-in-out'>

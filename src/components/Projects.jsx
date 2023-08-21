@@ -6,6 +6,8 @@ import weather2 from '../assets/weather2.png'
 import netflix2 from '../assets/netflix2.png'
 import portfolio3 from '../assets/portfolio3.png'
 import portfolio4 from '../assets/portfolio4.png'
+import { VscGithubInverted } from 'react-icons/vsc'
+import Swal from 'sweetalert2'
 
 
 export default function Projects() {
@@ -15,6 +17,17 @@ export default function Projects() {
     const [showPortfolioModal, setShowPortfolioModal] = useState(false);
     const [showTechoverflowModal, setShowTechoverflowModal] = useState(false);
     const [showPortfolio2Modal, setShowPortfolio2Modal] = useState(false);
+    
+    function handleFypGitModal(){
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Source code is not public',
+          })
+    }
+    function handleCrudDemoModal(){
+        Swal.fire('Its not deployed yet.')
+    }
 
     const handleFypImage = () => {
         setShowFypModal(true);
@@ -80,25 +93,38 @@ export default function Projects() {
     return (
         <>
             <div className='bg-[#EEEEEE] lg:px-20 py-5'>
-                <h2 className='flex justify-center text-4xl font-light' id="projects">Projects</h2>
+                <h2 className='flex justify-center text-4xl font-light' id="projects" data-aos="slide-down" data-aos-duration="1000">Projects</h2>
                 <div className='grid justify-center grid-cols-1 gap-7 md:mt-0 mt-8 md:grid-cols-2 lg:grid-cols-3 md:p-10 px-5'>
 
                     <div className='flex justify-center hover:scale-105 hover:shadow-xl transition duration-400 ease-in-out'>
                         <div className="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg">
                             <img className="w-full cursor-pointer h-48" src={educist} alt="Project1" onClick={handleFypImage} />
-                            <div className="px-6 py-4">
-                                <div className="mb-2 text-lg font-semibold">Final Year Project</div>
-                                <p className="text-md font-normal text-[#8A8886]">
-                                    Different technologies has been used like React JS, Next JS, Redux Saga, MongoDB, Node JS, Tailwind CSS etc.
-                                </p>
-                                <p>Visit:  <span><a href='https://www.educist.net'>www.educist.net</a></span></p>
-                            </div>
-                            <div className="px-6 pb-4">
-                                <a href='https://www.educist.net'>
-                                    <button className="px-3 py-1 font-semibold text-white bg-blue-500 rounded-2xl hover:bg-slate-700">
-                                        Check
-                                    </button>
-                                </a>
+                            <div className='px-6 py-4'>
+                                <div className="h-28">
+                                    <div className="mb-2 text-lg font-semibold">Final Year Project</div>
+                                    <p className="text-md font-normal text-[#8A8886]">
+                                        Different technologies has been used like React JS, Next JS, Redux Saga, MongoDB, Node JS, Tailwind CSS etc.
+                                    </p>
+                                    {/* <p className='text-blue-500'>Visit:  <span><a href='https://www.educist.net'>www.educist.net</a></span></p> */}
+                                </div>
+                                <div className='flex py-4 space-x-3'>
+                                    <div className="">
+                                        {/* <a href='#'> */}
+
+                                            <button className="px-3 py-1 font-semibold rounded-full hover:bg-white hover:text-black outline outline-black bg-black text-white" onClick={handleFypGitModal}>
+                                                Git
+                                            </button>
+                                        {/* </a> */}
+                                    </div>
+                                    <div className="">
+                                        <a href='https://www.educist.net'>
+
+                                            <button className="px-3 py-1 font-semibold rounded-full hover:bg-white hover:text-black outline outline-black bg-black text-white">
+                                                Demo
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -106,19 +132,32 @@ export default function Projects() {
                     <div className='flex justify-center hover:scale-105 hover:shadow-xl transition duration-400 ease-in-out'>
                         <div className="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg">
                             <img className="w-full cursor-pointer h-48" src={techoverflow2} alt="Project2" onClick={handleTechoverflowImage} />
-                            <div className="px-6 py-4">
-                                <div className="mb-2 text-lg font-semibold">Techoverflow Website</div>
-                                <p className="text-md font-normal text-[#8A8886]">
-                                    Full responsive website built using React JS and Bootstrap. I developed this website during internsip.
-                                </p>
-                                <p>Visit:  <span><a href='https://techoverflow.netlify.app'>techoverflow.netlify.app</a></span></p>
-                            </div>
-                            <div className="px-6 pb-4">
-                                <a href='https://github.com/Abdullahbhatti77/techoverflow_website.git'>
-                                    <button className="px-3 py-1 font-semibold text-white bg-blue-500 rounded-2xl hover:bg-slate-700">
-                                        Check
-                                    </button>
-                                </a>
+                            <div className='px-6 py-4'>
+                                <div className="h-28">
+                                    <div className="mb-2 text-lg font-semibold">Techoverflow Website</div>
+                                    <p className="text-md font-normal text-[#8A8886]">
+                                        Full responsive website built using React JS and Bootstrap. I developed this website during internsip.
+                                    </p>
+                                    {/* <p>Visit:  <span><a href='https://techoverflow.netlify.app'>techoverflow.netlify.app</a></span></p> */}
+                                </div>
+                                <div className='flex py-4 space-x-3'>
+                                    <div>
+                                        <a href='https://github.com/Abdullahbhatti77/techoverflow_website.git'>
+
+                                            <button className="px-3 py-1 font-semibold rounded-full hover:bg-white hover:text-black outline outline-black bg-black text-white">
+                                                Git
+                                            </button>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href='https://techoverflow.netlify.app'>
+
+                                            <button className="px-3 py-1 font-semibold rounded-full hover:bg-white hover:text-black outline outline-black bg-black text-white">
+                                                Demo
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -126,19 +165,32 @@ export default function Projects() {
                     <div className='flex justify-center hover:scale-105 hover:shadow-xl transition duration-400 ease-in-out'>
                         <div className="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg">
                             <img className="w-full cursor-pointer h-48" src={weather2} alt="Project3" onClick={handleWeatherImage} />
-                            <div className="px-6 py-4">
-                                <div className="mb-2 text-lg font-semibold">Weather App</div>
-                                <p className="text-md font-normal text-[#8A8886]">
-                                    Built using React JS, Bootstrap, and openweather api. It shows the weather of entered city.
-                                </p>
-                                <p>Visit:  <span><a href='https://checkurweather.netlify.app'>checkurweather.netlify.app</a></span></p>
-                            </div>
-                            <div className="px-6 pb-4">
-                                <a href='https://github.com/Abdullahbhatti77/PWA-Weather-App.git'>
-                                    <button className="px-3 py-1 font-semibold text-white bg-blue-500 rounded-2xl hover:bg-slate-700">
-                                        Check
-                                    </button>
-                                </a>
+                            <div className='px-6 py-4'>
+                                <div className="h-28">
+                                    <div className="mb-2 text-lg font-semibold">Weather App</div>
+                                    <p className="text-md font-normal text-[#8A8886]">
+                                        Built using React JS, Bootstrap, and openweather api. It shows the weather of entered city.
+                                    </p>
+                                    {/* <p>Visit:  <span><a href='https://checkurweather.netlify.app'>checkurweather.netlify.app</a></span></p> */}
+                                </div>
+                                <div className='flex py-4 space-x-3'>
+                                    <div className="">
+                                        <a href='https://github.com/Abdullahbhatti77/PWA-Weather-App.git'>
+
+                                            <button className="px-3 py-1 font-semibold rounded-full hover:bg-white hover:text-black outline outline-black bg-black text-white">
+                                                Git
+                                            </button>
+                                        </a>
+                                    </div>
+                                    <div className="">
+                                        <a href='https://check-ur-weather.netlify.app/'>
+
+                                            <button className="px-3 py-1 font-semibold rounded-full hover:bg-white hover:text-black outline outline-black bg-black text-white">
+                                                Demo
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -146,19 +198,32 @@ export default function Projects() {
                     <div className='flex justify-center hover:scale-105 hover:shadow-xl transition duration-400 ease-in-out'>
                         <div className="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg">
                             <img className="w-full cursor-pointer h-48" src={netflix2} alt="Project4" onClick={handleNetflixImage} />
-                            <div className="px-6 py-4">
-                                <div className="mb-2 text-lg font-semibold">Mini Netflix Clone</div>
-                                <p className="text-md font-normal text-[#8A8886]">
-                                    Responsive website built using React JS, Bootsrap.
-                                </p>
-                                <p>Visit:  <span><a href='https://netflixur.netlify.app'>netflixur.netlify.app</a></span></p>
-                            </div>
-                            <div className="px-6 pb-4">
-                                <a href='https://github.com/Abdullahbhatti77/netflix-clone-websitee.git'>
-                                    <button className="px-3 py-1 font-semibold text-white bg-blue-500 rounded-2xl hover:bg-slate-700">
-                                        Check
-                                    </button>
-                                </a>
+                            <div className='px-6 py-4'>
+                                <div className="h-28">
+                                    <div className="mb-2 text-lg font-semibold">Mini Netflix Clone</div>
+                                    <p className="text-md font-normal text-[#8A8886]">
+                                        Responsive website built using React JS, Bootsrap and deployed on netlify.
+                                    </p>
+                                    {/* <p>Visit:  <span><a href='https://netflixur.netlify.app'>netflixur.netlify.app</a></span></p> */}
+                                </div>
+                                <div className='flex py-4 space-x-3'>
+                                    <div>
+                                        <a href='https://github.com/Abdullahbhatti77/netflix-clone-websitee.git'>
+
+                                            <button className="px-3 py-1 font-semibold rounded-full hover:bg-white hover:text-black outline outline-black bg-black text-white">
+                                                Git
+                                            </button>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href='https://netflixur.netlify.app'>
+
+                                            <button className="px-3 py-1 font-semibold rounded-full hover:bg-white hover:text-black outline outline-black bg-black text-white">
+                                                Demo
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -166,16 +231,31 @@ export default function Projects() {
                     <div className='flex justify-center hover:scale-105 hover:shadow-xl transition duration-400 ease-in-out'>
                         <div className="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg">
                             <img className="w-full cursor-pointer h-48" src={portfolio3} alt="Project5" onClick={handlePortfolio2Image} />
-                            <div className="px-6 py-4">
-                                <div className="mb-2 text-lg font-semibold">Portfolio Website</div>
-                                <p className="text-md font-normal text-[#8A8886]">
-                                    Full responsive portfolio website built using React JS and Tailwind CSS. Its the same website you are seeing now.
-                                </p>
-                            </div>
-                            <div className="px-6 pb-4">
-                                <button className="px-3 py-1 font-semibold text-white bg-blue-500 rounded-2xl hover:bg-slate-700">
-                                    Check
-                                </button>
+                            <div className='px-6 py-4'>
+                                <div className="h-28">
+                                    <div className="mb-2 text-lg font-semibold">Portfolio Website</div>
+                                    <p className="text-md font-normal text-[#8A8886]">
+                                        Full responsive portfolio website built using React JS and Tailwind CSS. Its the same website you are seeing now.
+                                    </p>
+                                </div>
+                                <div className='flex py-4 space-x-3'>
+                                    <div className="">
+                                        <a href='https://github.com/Abdullahbhatti77/MyPortfolio.git'>
+
+                                            <button className="px-3 py-1 font-semibold rounded-full hover:bg-white hover:text-black outline outline-black bg-black text-white">
+                                                Git
+                                            </button>
+                                        </a>
+                                    </div>
+                                    <div className="">
+                                        <a href='https://abdullahdev10.netlify.app'>
+
+                                            <button className="px-3 py-1 font-semibold rounded-full hover:bg-white hover:text-black outline outline-black bg-black text-white">
+                                                Demo
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -183,18 +263,31 @@ export default function Projects() {
                     <div className='flex justify-center hover:scale-105 hover:shadow-xl transition duration-400 ease-in-out'>
                         <div className="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg">
                             <img className="w-full cursor-pointer h-48" src={portfolio4} alt="Project6" onClick={handlePortfolioImage} />
-                            <div className="px-6 py-4">
-                                <div className="mb-2 text-lg font-semibold">CRUD App</div>
-                                <p className="text-md font-normal text-[#8A8886]">
-                                    Responsive app built using Next JS, MongoDB, and Tailwind CSS to perform crud operations.
-                                </p>
-                            </div>
-                            <div className="px-6 pb-4">
-                                <a href='https://github.com/Abdullahbhatti77/NextJS-Crud.git'>
-                                    <button className="px-3 py-1 font-semibold text-white bg-blue-500 rounded-2xl hover:bg-slate-700">
-                                        Check
-                                    </button>
-                                </a>
+                            <div className='px-6 py-4'>
+                                <div className="h-28">
+                                    <div className="mb-2 text-lg font-semibold">CRUD App</div>
+                                    <p className="text-md font-normal text-[#8A8886]">
+                                        Responsive app built using Next JS, MongoDB, and Tailwind CSS to perform crud operations.
+                                    </p>
+                                </div>
+                                <div className='flex py-4 space-x-3'>
+                                    <div className="">
+                                        <a href='https://github.com/Abdullahbhatti77/NextJS-Crud.git'>
+
+                                            <button className="px-3 py-1 font-semibold rounded-full hover:bg-white hover:text-black outline outline-black bg-black text-white">
+                                                Git
+                                            </button>
+                                        </a>
+                                    </div>
+                                    <div className="">
+                                        {/* <a href='https://www.educist.net'> */}
+
+                                            <button className="px-3 py-1 font-semibold rounded-full hover:bg-white hover:text-black outline outline-black bg-black text-white" onClick={handleCrudDemoModal}>
+                                                Demo
+                                            </button>
+                                        {/* </a> */}
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -20,7 +20,7 @@ export default function Skills() {
     <>
       <div className='lg:px-20 bg-[#EEEEEE] py-5' id="skills">
 
-        <h2 className='flex justify-center text-4xl font-light'>Skills</h2>
+        <h2 className='flex justify-center text-4xl font-light' data-aos="slide-down" data-aos-duration="1000">Skills</h2>
 
         <div className='grid grid-cols-2 gap-4 md:mt-0 mt-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 lg:gap-20 md:p-10'>
 

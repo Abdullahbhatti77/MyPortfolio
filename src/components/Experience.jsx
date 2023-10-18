@@ -6,9 +6,9 @@ export default function Experience() {
     return (
         <>
             <div className='lg:px-20 bg-[#EEEEEE] py-5'>
-                <h2 className='flex justify-center text-4xl font-light' id="experience" data-aos="slide-down" data-aos-duration="1000">Experience</h2>
+                <h2 className='flex justify-center text-4xl font-light' id="experience">Experience</h2>
                 <div className='grid grid-cols-1 md:mt-0 mt-8 gap-7 lg:grid-cols-2 md:p-10 px-5'>
-                    <div className='rounded-xl shadow-xl p-5 bg-white' data-aos="zoom-in-right" data-aos-duration="1000">
+                    <div className='rounded-xl shadow-xl p-5 bg-white'>
                         <div className='flex lg:flex-row flex-col'>
                             <div className='flex justify-center items-center flex-col'>
                                 <div className='w-32 flex items-center justify-center flex-col'>
@@ -32,7 +32,7 @@ export default function Experience() {
                         </div>
                     </div>
 
-                    <div className='rounded-xl shadow-xl p-5 bg-white' data-aos="zoom-in-left" data-aos-duration="1000">
+                    <div className='rounded-xl shadow-xl p-5 bg-white'>
                         <div className='flex lg:flex-row flex-col'>
                             <div className='flex justify-center items-center flex-col'>
                                 <div className='w-32 flex items-center justify-center flex-col'>

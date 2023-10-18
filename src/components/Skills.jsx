@@ -5,7 +5,6 @@ import bootstrap from '../assets/bootstrap.svg';
 import javascript from '../assets/javascript.svg';
 import react from '../assets/react.svg';
 import tailwind from '../assets/tailwind.svg';
-import mui from '../assets/mui.svg';
 import git from '../assets/git.svg';
 import nextjs from '../assets/nextjs.svg';
 import redux from '../assets/redux.svg';
@@ -13,14 +12,17 @@ import seo from '../assets/seo.svg';
 import wordpress from '../assets/wordpress.svg';
 import mongodb from '../assets/mongodb.svg';
 import aws from '../assets/aws.svg';
-import nodejs from '../assets/nodejs.svg';
+import vuejs from '../assets/vuejs.svg';
+import vuex from '../assets/vuex.svg';
+import vuetify from '../assets/vuetify.svg';
+import api from '../assets/api.svg';
 
 export default function Skills() {
   return (
     <>
       <div className='lg:px-20 bg-[#EEEEEE] py-5' id="skills">
 
-        <h2 className='flex justify-center text-4xl font-light' data-aos="slide-down" data-aos-duration="1000">Skills</h2>
+        <h2 className='flex justify-center text-4xl font-light'>Skills</h2>
 
         <div className='grid grid-cols-2 gap-4 md:mt-0 mt-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 lg:gap-20 md:p-10'>
 
@@ -33,12 +35,21 @@ export default function Skills() {
             <p className='flex justify-center p-2'>Next JS</p>
           </div>
           <div className='flex flex-col items-center'>
+            <img src={vuejs} className='w-20 h-20' alt='vuejs Logo' />
+            <p className='flex justify-center p-2'>Vue JS</p>
+          </div>
+          <div className='flex flex-col items-center'>
             <img src={redux} className='w-20 h-20' alt='redux Logo' />
             <p className='flex justify-center p-2'>Redux JS</p>
           </div>
+        
           <div className='flex flex-col items-center'>
-            <img src={nodejs} className='w-20 h-20' alt='nodejs Logo' />
-            <p className='flex justify-center p-2'>Node JS</p>
+            <img src={vuex} className='w-20 h-20' alt='vuex Logo' />
+            <p className='flex justify-center p-2'>VueX</p>
+          </div>
+          <div className='flex flex-col items-center'>
+            <img src={api} className='w-20 h-20' alt='api Logo' />
+            <p className='flex justify-center p-2'>API Integration</p>
           </div>
           <div className='flex flex-col items-center'>
             <img src={mongodb} className='w-20 h-20' alt='mongodb Logo' />
@@ -50,8 +61,8 @@ export default function Skills() {
             <p className='flex justify-center p-2'>Tailwind Css</p>
           </div>
           <div className='flex flex-col items-center'>
-            <img src={mui} className='w-20 h-20' alt='mui Logo' />
-            <p className='flex justify-center p-2'>MUI</p>
+            <img src={vuetify} className='w-20 h-20' alt='vuetify Logo' />
+            <p className='flex justify-center p-2'>Vuetify</p>
           </div>
           <div className='flex flex-col items-center'>
             <img src={git} className='w-20 h-20' alt='git Logo' />

@@ -5,7 +5,7 @@ export default function About() {
     return (
         <>
             <div className='p-5 bg-[#EEEEEE] lg:py-16 lg:px-28' id="about">
-                <div className='grid gap-5 p-4 bg-white rounded-lg shadow-lg lg:grid-cols-2 lg:p-5 md:grid-cols-2 sm:grid-cols-1' data-aos="zoom-in" data-aos-duration="1000">
+                <div className='grid gap-5 p-4 bg-white rounded-lg shadow-lg lg:grid-cols-2 lg:p-5 md:grid-cols-2 sm:grid-cols-1'>
                     <div className='flex justify-center lg:col-span-1'>
                         <img src={gif} className='lg:w-80 lg:h-80 w-56 h-56'></img>
                     </div>
@@ -16,7 +16,8 @@ export default function About() {
                             <p className='text-md font-normal text-[#808084] mt-2'>
                                 Computer Science student graduating from <span className='font-bold'>University of Management and Technology Lahore</span>, last semester completed. Quick learner and thrive in a fast-paced environment. Enjoy
                                 working with others and collaborating on projects to create the best
-                                possible outcome. Created multiple projects during my graduation. While doing my graduation, I had the pleasure to work for two companies (<span className='font-bold'>Techoverflow</span> and <span className='font-bold'>EDTest Testing Services.)</span>
+                                possible outcome. Created multiple projects during my graduation. While doing my graduation, I had the pleasure to work for two companies (<span className='font-bold'>Techoverflow</span> and <span className='font-bold'>EDTest Testing Services). </span>
+                                Currently working for <span className='font-bold'>Programmers Force.</span>
                             </p>
                             <p className='text-md font-normal text-[#808084] mt-2'>
                                 I am confident that my technical skills and drive to

@@ -16,91 +16,41 @@ import vuejs from '../assets/vuejs.svg';
 import vuex from '../assets/vuex.svg';
 import vuetify from '../assets/vuetify.svg';
 import api from '../assets/api.svg';
+import python from '../assets/python.svg';
+
+const skillsData = [
+  { name: 'React JS', icon: react },
+  { name: 'Next JS', icon: nextjs },
+  { name: 'Vue JS', icon: vuejs },
+  { name: 'Python', icon: python },
+  { name: 'Redux JS', icon: redux },
+  { name: 'VueX', icon: vuex },
+  { name: 'API Integration', icon: api },
+  { name: 'Mongo DB', icon: mongodb },
+  { name: 'Tailwind Css', icon: tailwind },
+  { name: 'Vuetify', icon: vuetify },
+  { name: 'Git', icon: git },
+  { name: 'AWS', icon: aws },
+  { name: 'SEO', icon: seo },
+  { name: 'Wordpress', icon: wordpress },
+  { name: 'HTML', icon: html },
+  { name: 'CSS', icon: css },
+  { name: 'Bootstrap', icon: bootstrap },
+  { name: 'Javascript', icon: javascript },
+];
 
 export default function Skills() {
   return (
-    <>
-      <div className='lg:px-20 bg-[#EEEEEE] py-5' id="skills">
-
-        <h2 className='flex justify-center text-4xl font-light'>Skills</h2>
-
-        <div className='grid grid-cols-2 gap-4 md:mt-0 mt-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 lg:gap-20 md:p-10'>
-
-          <div className='flex flex-col items-center'>
-            <img src={react} className='w-20 h-20' alt='HTML5 Logo' />
-            <p className='flex justify-center p-2'>React JS</p>
+    <div className='lg:px-12 bg-[#FCFCFC] py-5 xl:px-20 md:px-0' id="skills">
+      <h2 className='flex justify-center text-4xl font-bold text-slate-700'>Skills</h2>
+      <div className='grid grid-cols-2 gap-4 md:mt-0 mt-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 lg:gap-20 md:p-10'>
+        {skillsData.map((skill, index) => (
+          <div key={index} className='flex flex-col items-center'>
+            <img src={skill.icon} className='w-20 h-20' alt={`${skill.name} Logo`} />
+            <p className='flex justify-center p-2'>{skill.name}</p>
           </div>
-          <div className='flex flex-col items-center'>
-            <img src={nextjs} className='w-20 h-20' alt='nextjs Logo' />
-            <p className='flex justify-center p-2'>Next JS</p>
-          </div>
-          <div className='flex flex-col items-center'>
-            <img src={vuejs} className='w-20 h-20' alt='vuejs Logo' />
-            <p className='flex justify-center p-2'>Vue JS</p>
-          </div>
-          <div className='flex flex-col items-center'>
-            <img src={redux} className='w-20 h-20' alt='redux Logo' />
-            <p className='flex justify-center p-2'>Redux JS</p>
-          </div>
-        
-          <div className='flex flex-col items-center'>
-            <img src={vuex} className='w-20 h-20' alt='vuex Logo' />
-            <p className='flex justify-center p-2'>VueX</p>
-          </div>
-          <div className='flex flex-col items-center'>
-            <img src={api} className='w-20 h-20' alt='api Logo' />
-            <p className='flex justify-center p-2'>API Integration</p>
-          </div>
-          <div className='flex flex-col items-center'>
-            <img src={mongodb} className='w-20 h-20' alt='mongodb Logo' />
-            <p className='flex justify-center p-2'>Mongo DB</p>
-          </div>
-
-          <div className='flex flex-col items-center'>
-            <img src={tailwind} className='w-20 h-20' alt='tailwind Logo' />
-            <p className='flex justify-center p-2'>Tailwind Css</p>
-          </div>
-          <div className='flex flex-col items-center'>
-            <img src={vuetify} className='w-20 h-20' alt='vuetify Logo' />
-            <p className='flex justify-center p-2'>Vuetify</p>
-          </div>
-          <div className='flex flex-col items-center'>
-            <img src={git} className='w-20 h-20' alt='git Logo' />
-            <p className='flex justify-center p-2'>Git</p>
-          </div>
-          <div className='flex flex-col items-center'>
-            <img src={aws} className='w-20 h-20' alt='aws Logo' />
-            <p className='flex justify-center p-2'>AWS</p>
-          </div>
-
-          <div className='flex flex-col items-center'>
-            <img src={seo} className='w-20 h-20' alt='seo Logo' />
-            <p className='flex justify-center p-2'>SEO</p>
-          </div>
-          <div className='flex flex-col items-center'>
-            <img src={wordpress} className='w-20 h-20' alt='wordpress Logo' />
-            <p className='flex justify-center p-2'>Wordpress</p>
-          </div>
-          <div className='flex flex-col items-center'>
-            <img src={html} className='w-20 h-20' alt='html Logo' />
-            <p className='flex justify-center p-2'>HTML</p>
-          </div>
-          <div className='flex flex-col items-center'>
-            <img src={css} className='w-20 h-20' alt='css Logo' />
-            <p className='flex justify-center p-2'>CSS</p>
-          </div>
-
-          <div className='flex flex-col items-center'>
-            <img src={bootstrap} className='w-20 h-20' alt='bootstrap Logo' />
-            <p className='flex justify-center p-2'>Bootstrap</p>
-          </div>
-          <div className='flex flex-col items-center'>
-            <img src={javascript} className='w-20 h-20' alt='javascript Logo' />
-            <p className='flex justify-center p-2'>Javascript</p>
-          </div>
-
-        </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 }
